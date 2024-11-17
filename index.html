@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpler Animation with Links</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        canvas {
+            display: block;
+        }
+        #content {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #content h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        #content a {
+            font-size: 18px;
+            color: #00aaff;
+            text-decoration: underline;
+            display: block;
+            margin: 10px 0;
+        }
+        #content a:hover {
+            color: #ffcc00;
+        }
+        #fullscreen-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #fullscreen-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="scene"></canvas>
+    <div id="content">
+        <h1>Hello Visitors! Welcome to Emmanuel's Angle</h1>
+        <code>Someone says there's love in sharing</code>
+        <p>You can download the book by clicking the link below:</p>
+        <a href="your-download-link-here.pdf" download="The-Richest-Man-In-Babylon.pdf">
+            Download "The Richest Man In Babylon"
+        </a> 
+        <a href="birthday.html">If your name starts with a 'B', has an 'l', at least two 's' and ends with a 'g' click here</a>
+    </div>
+    <button id="fullscreen-btn">Go Fullscreen</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="simple-animation.js"></script>
+</body>
+</html>

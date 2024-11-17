@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Shoutout</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        canvas {
+            display: block;
+        }
+        #message {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #message h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        #message p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        a {
+            font-size: 18px;
+            color: #00aaff;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="birthday-scene"></canvas>
+    <div id="message">
+        <h1>Happy Birthday To You Dear.</h1>
+        <p>Wishing you a day filled with happiness and surprises, more of life, peace and progress</p>
+        <a href="/index.html">Back to Main Page</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="birthday-animation.js"></script>
+</body>
+</html>
